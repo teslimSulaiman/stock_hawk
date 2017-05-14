@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PercentChangeTextStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BidPriceTextStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="StockSymbolTextStyle">
+        <item name="android:textSize">@dimen/stock_symbol_text_size</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/symbolId"
+        android:layout_marginStart="@dimen/widget_margin_start"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingStart="@dimen/widget_padding"
+        android:paddingEnd="@dimen/widget_padding"
+        android:textSize="@dimen/widget_text_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="@integer/text_widget_weight"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceId"
+        android:paddingStart="@dimen/widget_padding"
+        android:paddingEnd="@dimen/widget_padding"
+        android:textSize="@dimen/widget_text_size"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_weight="@integer/text_widget_weight"/>
+
+</LinearLayout>

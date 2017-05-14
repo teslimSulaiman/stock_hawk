@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingStart="@dimen/layout_padding"
+    android:paddingEnd="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding">
+
+    <TextView
+        android:id="@+id/symbol"
+        style="@style/StockSymbolTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        tools:text="@string/symbol_sample" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="@integer/layout_weight"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/BidPriceTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_margin_end"
+            tools:text="@string/price_text_sample" />
+
+        <TextView
+            android:id="@+id/change"
+            style="@style/PercentChangeTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/percent_change_pill_green"
+            android:paddingLeft="@dimen/quote_text_padding"
+            android:paddingRight="@dimen/quote_text_padding"
+            android:paddingEnd="@dimen/quote_text_padding"
+            android:paddingStart="@dimen/quote_text_padding"
+            tools:text="@string/percentage" />
+    </LinearLayout>
+</LinearLayout>
